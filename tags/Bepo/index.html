@@ -7,7 +7,7 @@
   <meta name="keyword" content="nlp">
   <title>
     
-      Tags | Vulgivagus
+      Vulgivagus
     
   </title>
   <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -105,62 +105,35 @@
 </header>
 
     <div id="article-banner">
-  <h2>Tags</h2>
+  <h2>Archives</h2>
 </div>
-<main class="app-body">
-  <div id="tag-cloud">
+<main class="app-body" id="archives">
+  
+  
+  
+    <section class="time-section">
+  <h1 class="section-year">
+    2017
+  </h1>
+  <div class="section-list">
     
-      <a class="tag2" data-name="tag-Linguistique">Linguistique</a>
     
-      <a class="tag0" data-name="tag-NLP">NLP</a>
-    
-      <a class="tag1" data-name="tag-Tokenisation">Tokenisation</a>
-    
-      <a class="tag0" data-name="tag-Bépo">Bépo</a>
+      <div class="section-list-item">
+        <a href="/2017/09/10/Passer-au-Bepo-TypeMatrix/" class="archive-title">Passer au Bépo TypeMatrix sous Linux (Ubuntu)</a>
+        <p class="archive-date">10-09</p>
+      </div>
     
   </div>
+</section>
+
   
-    <div class="tag-list">
-      <h3 class="tag-name" id="tag-Linguistique">Linguistique</h3>
-      
-    </div>
-    
-    <div class="tag-list">
-      <h3 class="tag-name" id="tag-NLP">NLP</h3>
-      
-    </div>
-    
-    <div class="tag-list">
-      <h3 class="tag-name" id="tag-Tokenisation">Tokenisation</h3>
-      
-    </div>
-    
-    <div class="tag-list">
-      <h3 class="tag-name" id="tag-Bépo">Bépo</h3>
-      
-        <ul class="tag-preview">
-          <li>
-            <a href="/2017/09/10/Passer-au-Bepo-TypeMatrix/">Passer au Bépo TypeMatrix sous Linux (Ubuntu)</a>
-          </li>
-        </ul>
-        
-    </div>
-    
 </main>
 
 <script>
   (function () {
-    var url = 'https://fraxoe.github.io/tags/index.html'
-    $('#article-banner').geopattern(url)
-    $('.header').removeClass('fixed-header')
-
-    var tag = location.hash.replace('#', '')
-    if (tag) {
-      var tagId = "#tag-" + tag;
-      $("html, body").animate({
-        scrollTop: $(tagId).offset().top
-      }, 400)
-    }
+    var url = 'https://fraxoe.github.io/tags/Bepo/index.html';
+    $('#article-banner').geopattern(url);
+    $('.header').removeClass('fixed-header');
   })();
 </script>
 
