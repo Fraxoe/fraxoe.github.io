@@ -7,7 +7,7 @@
   <meta name="keyword" content="nlp">
   <title>
     
-      Tags | Vulgivagus
+      Vulgivagus
     
   </title>
   <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -32,7 +32,7 @@
       
         <li class="list-item">
           
-            <a href="/" class="item-link">Accueil</a>
+            <a href="/" class="item-link active">Accueil</a>
           
         </li>
       
@@ -71,7 +71,7 @@
         
           <li class="menu-item">
             
-              <a href="/" class="menu-link">Accueil</a>
+              <a href="/" class="menu-link mobile-active">Accueil</a>
             
           </li>
         
@@ -104,65 +104,33 @@
   </div>
 </header>
 
-    <div id="article-banner">
-  <h2>Tags</h2>
-</div>
-<main class="app-body">
-  <div id="tag-cloud">
-    
-      <a class="tag1" data-name="tag-Linguistique">Linguistique</a>
-    
-      <a class="tag2" data-name="tag-NLP">NLP</a>
-    
-      <a class="tag2" data-name="tag-Tokenisation">Tokenisation</a>
-    
-      <a class="tag0" data-name="tag-Bépo">Bépo</a>
-    
-  </div>
+    <main class="app-body">
   
-    <div class="tag-list">
-      <h3 class="tag-name" id="tag-Linguistique">Linguistique</h3>
+    <article class="article-card">
+      <h2 class="article-head">
+        <a href="/2017/09/10/Passer-au-Bepo-TypeMatrix/">Passer au Bépo TypeMatrix sous Linux (Ubuntu)</a>
+      </h2>
+      <p class="article-date">September 10, 2017</p>
       
-    </div>
-    
-    <div class="tag-list">
-      <h3 class="tag-name" id="tag-NLP">NLP</h3>
-      
-    </div>
-    
-    <div class="tag-list">
-      <h3 class="tag-name" id="tag-Tokenisation">Tokenisation</h3>
-      
-    </div>
-    
-    <div class="tag-list">
-      <h3 class="tag-name" id="tag-Bépo">Bépo</h3>
-      
-        <ul class="tag-preview">
-          <li>
-            <a href="/2017/09/10/Passer-au-Bepo-TypeMatrix/">Passer au Bépo TypeMatrix sous Linux (Ubuntu)</a>
-          </li>
-        </ul>
         
-    </div>
-    
+  <a href="/tags#Bépo" >
+    <span class="tag-code">Bépo</span>
+  </a>
+
+      
+      <div class="article-summary">
+        
+          <p><em>Vous avez décidé de sauter le pas afin de soulager vos poignets: vous passez au bépo.<br>Pour ne pas faire les choses à moitié, vous avez même investi dans un nouveau clavier ergonomique.<br>Félicitations !</em></p>
+<p> <em>C’est le moment d’installer le clavier</em><br>
+        
+      </div>
+      <a class="more" href="/2017/09/10/Passer-au-Bepo-TypeMatrix/">⇢ continuer à lire…</a>
+    </article>
+  
+
+  
 </main>
 
-<script>
-  (function () {
-    var url = 'https://fraxoe.github.io/tags/index.html'
-    $('#article-banner').geopattern(url)
-    $('.header').removeClass('fixed-header')
-
-    var tag = location.hash.replace('#', '')
-    if (tag) {
-      var tagId = "#tag-" + tag;
-      $("html, body").animate({
-        scrollTop: $(tagId).offset().top
-      }, 400)
-    }
-  })();
-</script>
 
     <div class="scroll-top">
   <span class="arrow-icon"></span>

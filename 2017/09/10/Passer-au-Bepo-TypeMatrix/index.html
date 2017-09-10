@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="description" content="Fraxœ&#39;s blog">
+  <meta name="keyword" content="nlp">
+  <title>
+    
+      Passer au Bépo TypeMatrix sous Linux (Ubuntu) | Vulgivagus
+    
+  </title>
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/plugins/gitment.css">
+  <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdn.bootcss.com/geopattern/1.2.3/js/geopattern.min.js"></script>
+  <script src="//cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+  <script src="/js/qrious.js"></script>
+<script src="/js/gitment.js"></script>
+</head>
+  <body>
+    <header class="header fixed-header">
+  <div class="header-container">
+    <a class="home-link" href="/">
+      <div class="logo"></div>
+      <span>Vulgivagus</span>
+    </a>
+    <ul class="right-list">
+      
+        <li class="list-item">
+          
+            <a href="/" class="item-link">Accueil</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/tags/" class="item-link">Tags</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/archives/" class="item-link">Archives</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/project/" class="item-link">Ressources & Projets</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/about/" class="item-link">À propos</a>
+          
+        </li>
+      
+    </ul>
+    <div class="menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div class="menu-mask">
+      <ul class="menu-list">
+        
+          <li class="menu-item">
+            
+              <a href="/" class="menu-link">Accueil</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/tags/" class="menu-link">Tags</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/archives/" class="menu-link">Archives</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/project/" class="menu-link">Ressources & Projets</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/about/" class="menu-link">À propos</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <div id="article-banner">
+  <h2>Passer au Bépo TypeMatrix sous Linux (Ubuntu)</h2>
+  <p class="post-date">10-09-2017</p>
+  <div class="arrow-down">
+    <a href="javascript:;"></a>
+  </div>
+</div>
+<main class="app-body">
+  <article class="post-article">
+    <section class="markdown-content"><p><em>Vous avez décidé de sauter le pas afin de soulager vos poignets: vous passez au bépo.<br>Pour ne pas faire les choses à moitié, vous avez même investi dans un nouveau clavier ergonomique.<br>Félicitations !</em></p>
+<p> <em>C’est le moment d’installer le clavier</em><br><a id="more"></a></p>
+<blockquote>
+<p><span style="color:red">⚠ Ne réalisez ces opérations que lorsque vous êtes sûrs de pouvoir passer définitivement en mode bépo; par exemple, assurez vous de pouvoir taper tous vos mots de passe sans difficulté avec le nouveau clavier.</span></p>
+</blockquote>
+<hr>
+<h2 id="Configurez-l’agencement-du-clavier"><a href="#Configurez-l’agencement-du-clavier" class="headerlink" title="Configurez l’agencement du clavier"></a>Configurez l’agencement du clavier</h2><ul>
+<li>Ouvrez un terminal et lancez la commande <code>sudo dpkg-reconfigure keyboard-configuration</code></li>
+<li>Selon votre type de clavier, sélectionnez un des TypeMatrix (ou la marque correspondant à votre clavier). Pour ma part, j’ai sélectionné « TypeMatrix EZ-Reach 2030 USB », qui était abrégé « TMx2030USB » sur l’emballage du clavier.</li>
+<li>Pour les autres questions, à moins de connaître la réponse, appuyez sur entrée: cela conserve la réponse par défaut.</li>
+</ul>
+<h2 id="Passez-en-mode-de-saisie-bepo"><a href="#Passez-en-mode-de-saisie-bepo" class="headerlink" title="Passez en mode de saisie bépo"></a>Passez en mode de saisie bépo</h2><ul>
+<li>Ouvrez les paramètres de saisie de texte (sans doute une petite icône<br>[FR] en haut à gauche)</li>
+<li>En dessous de « sources d’entrée à utiliser », si « Français (Bépo, ergonomique, façon Dvorak) » n’apparaît pas dans la liste, il faut le rajouter. Vous pouvez l’ajouter avec l’icône en forme de petite croix en bas de l’encart.</li>
+</ul>
+<p>Pour vérifier que vous avez la configuration qui correspond effectivement à votre clavier, il y a une dernière étape:</p>
+<ul>
+<li>Comparez la disposition de votre clavier à celle que vous pouvez visualiser en cliquant sur la même petite icône [Fr] et en sélectionnant « Agencement du clavier ».</li>
+<li>Si ce n’est pas la même, il vous faudra relancer la commande <code>dpkg-reconfigure keyboard-configuration</code> et sélectionner un autre clavier.</li>
+</ul>
+<p>Vous pouvez à présent ouvrir un éditeur de texte et commencer à taper (en pensant bien à désactiver le pavé numérique).</p>
+<h2 id="Optionnel-—-Desactiver-votre-clavier-natif-sous-Linux-Ubuntu"><a href="#Optionnel-—-Desactiver-votre-clavier-natif-sous-Linux-Ubuntu" class="headerlink" title="Optionnel — Désactiver votre clavier natif sous Linux (Ubuntu)"></a>Optionnel — Désactiver votre clavier natif sous Linux (Ubuntu)</h2><p>Si vous branchez votre nouveau clavier USB sur votre ordinateur portable, il se peut que vous désiriez désactiver le clavier built-in. Dans ce cas, vous pouvez le faire en tapant les commandes suivantes, selon si vous désirez désactiver votre clavier temporairement ou définitivement:</p>
+<h3 id="Desactivation-temporaire"><a href="#Desactivation-temporaire" class="headerlink" title="Désactivation temporaire"></a>Désactivation temporaire</h3><p>(extrait traduit de <a href="https://askubuntu.com/questions/160945/is-there-a-way-to-disable-a-laptops-internal-keyboard" target="_blank" rel="external">ceci</a>):</p>
+<ul>
+<li>Lancez la commande <code>xinput list</code>. Cette commande liste les périphériques d’entrées (souris, clavier, touchpad…).</li>
+<li>Dans la liste, vous devriez voir apparaître « AT Translated Set 2 keyboard ». Il s’agit de votre clavier d’ordinateur portable, celui que vous souhaitez désactiver. Relevez son numéro d’<strong>id</strong> et aussi le numéro du « <strong>master</strong> », qui se trouve à cet emplacement: <code>[slave keyboard (#master)]</code></li>
+<li>Pour désactiver le clavier, exécutez la commande <code>xinput float &lt;#id&gt;</code>, où <code>&lt;#id&gt;</code> est ne numéro que vous avez relevé en face de « AT Translated Set 2 keyboard ». Par exemple si l’id était 14, la commande à lancer est  <code>xinput float 14</code>.<br>Il est également possible de le désactiver avec la commande <code>xinput disable &quot;AT Translated Set 2 keyboard&quot;</code> directement.</li>
+</ul>
+<p>Pour réactiver ce clavier là, il faudra lancer la commande <code>xinput reattach &lt;#id&gt; &lt;#master&gt;</code>.</p>
+<h3 id="Desactivation-«-definitive-»"><a href="#Desactivation-«-definitive-»" class="headerlink" title="Désactivation « définitive »"></a>Désactivation « définitive »</h3><ul>
+<li>Éditer (en mode super utilisateur) le fichier <code>/etc/default/grub</code>.</li>
+<li>Trouver la ligne <code>GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash&quot;</code> et la remplacer par <code>GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash i8042.nokbd&quot;</code>. Sauvegardez.</li>
+<li>Mettez votre grub à jour avec la commande <code>sudo update-grub</code> et redémarrez votre ordinateur.</li>
+</ul>
+<h1 id="Conseils-generiques-pour-une-transition-au-bepo"><a href="#Conseils-generiques-pour-une-transition-au-bepo" class="headerlink" title="Conseils génériques pour une transition au bépo"></a>Conseils génériques pour une transition au bépo</h1><p> Les principaux conseils pour réussir votre transition vers une nouvelle disposition de touche tiennent en 2 lignes:</p>
+<ul>
+<li><a href="https://bepo.fr/wiki/Apprentissage" target="_blank" rel="external">Ne pas regarder son clavier lors de l’apprentissage</a>. Vous pouvez par exemple vous entraîner plusieurs heures par jour sur <a href="http://tazzon.free.fr/dactylotest/bepodactyl/" target="_blank" rel="external">Bépodactyl</a>.</li>
+<li>Ne pas revenir en arrière (malgré les tentations). Dès lors que vous passez une de vos machine en Bépo, tenez-vous y.</li>
+</ul>
+<hr>
+<p> <em>Billet rédigé en 2 heures pour la première prise en main de mon nouveau TypeMatrix.</em></p>
+</section>
+    
+      <div class="tags">
+        <span>Tags:</span>
+        
+  <a href="/tags#Bépo" >
+    <span class="tag-code">Bépo</span>
+  </a>
+
+      </div>
+    
+	<!--
+    <div class="money-like">
+      <div class="reward-btn">
+        赏
+        <span class="money-code">
+          <span class="alipay-code">
+            <div class="code-image"></div>
+            <b>使用支付宝打赏</b>
+          </span>
+          <span class="wechat-code">
+            <div class="code-image"></div>
+            <b>使用微信打赏</b>
+          </span>
+        </span>
+      </div>
+      <p class="notice">若你觉得我的文章对你有帮助，欢迎点击上方按钮对我打赏</p>
+    </div>
+    <div class="qrcode">
+      <canvas id="share-qrcode"></canvas>
+      <p class="notice">扫描二维码，分享此文章</p>
+    </div>
+	-->
+    
+      <div id="comments"></div>
+    
+  </article>
+</main>
+
+<script>
+  (function () {
+    var url = 'https://fraxoe.github.io/2017/09/10/Passer-au-Bepo-TypeMatrix/';
+    $('#article-banner').geopattern(url)
+    $('.header').removeClass('fixed-header')
+
+     // error image
+    $(".markdown-content img").on('error', function() {
+      $(this).attr('src', 'http://file.muyutech.com/error-img.png')
+    })
+
+    // zoom image
+    $(".markdown-content img").on('click', function() {
+      var src = $(this).attr('src')
+      var imageW = $(this).width()
+      var imageH = $(this).height()
+
+      var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
+      zoom = zoom < 1 ? 1 : zoom
+      zoom = zoom > 2 ? 2 : zoom
+      var transY = (($(window).height() - imageH) / 2).toFixed(2)
+
+      $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
+      $('.image-view-wrap').addClass('wrap-active')
+      $('.image-view-wrap img').css({
+        'width': `${imageW}`,
+        'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
+      })
+      $('html').css('overflow', 'hidden')
+
+      $('.image-view-wrap').on('click', function() {
+        $(this).remove()
+        $('html').attr('style', '')
+      })
+    })
+
+    // qrcode
+    var qr = new QRious({
+      element: document.getElementById('share-qrcode'),
+      value: document.location.href
+    });
+
+    // gitment
+    var gitmentConfig = "Fraxœ";
+    if (gitmentConfig != "undefined") {
+      var gitment = new Gitment({
+        id: "Passer au Bépo TypeMatrix sous Linux (Ubuntu)",
+        owner: "Fraxœ",
+        repo: "Fraxoe.github.io",
+        oauth: {
+          client_id: "0f87e490e00ee3fd87ef",
+          client_secret: "4a9d2b148e7971c2201ad12131ce8bf8159ccd2e"
+        },
+        theme: {
+          render(state, instance) {
+            const container = document.createElement('div')
+            container.lang = "en-US"
+            container.className = 'gitment-container gitment-root-container'
+            container.appendChild(instance.renderHeader(state, instance))
+            container.appendChild(instance.renderEditor(state, instance))
+            container.appendChild(instance.renderComments(state, instance))
+            container.appendChild(instance.renderFooter(state, instance))
+            return container;
+          }
+        }
+      })
+      gitment.render(document.getElementById('comments'))
+    }
+  })();
+</script>
+
+    <div class="scroll-top">
+  <span class="arrow-icon"></span>
+</div>
+    <footer class="app-footer">
+  <p class="copyright">
+    &copy; 2017 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+    <br>
+    Thème Vexo (de yanm1ng), adapté par Fraxœ
+  </p>
+</footer>
+
+<script>
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+</script>
+<script>
+  async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+    FastClick.attach(document.body);
+  })
+</script>
+
+<script>
+  var hasLine = 'true';
+  async("//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js", function(){
+    $('figure pre').each(function(i, block) {
+      var figure = $(this).parents('figure');
+      if (hasLine == 'false') {
+        figure.find('.gutter').hide();
+      }
+      var lang = figure.attr('class').split(' ')[1] || 'code';
+      var codeHtml = $(this).html();
+      var codeTag = document.createElement('code');
+      codeTag.className = lang;
+      codeTag.innerHTML = codeHtml;
+      $(this).attr('class', '').empty().html(codeTag);
+      figure.attr('data-lang', lang.toUpperCase());
+      hljs.highlightBlock(block);
+    });
+  })
+</script>
+<!-- Baidu Tongji -->
+
+<script src="/js/script.js"></script>
+
+  </body>
+</html>
